@@ -1,14 +1,17 @@
-## vagrant-modern-ie
-Based on the virtual machine images released with the [Modern.IE project](http://dev.modern.ie/), vagrant-modern-ie makes testing IE easier with help from [Vagrant](http://vagrantup.com). The machine images in vagrant-modern-ie are based on the original Modern.IE project images.
+## Modern.IE VMs via Vagrant
 
-## Prerequisites
+Based on the virtual machine images released with the [Modern.IE project](http://dev.modern.ie/), this repo makes testing IE easier with help from [Vagrant](http://vagrantup.com).
 
-vagrant-modern-ie requires [Oracle Virtualbox](https://www.virtualbox.org/) and [Vagrant](http://vagrantup.com) be installed and in your path.
+## Requirements
+
+- [Oracle Virtualbox](https://www.virtualbox.org/)
+- [Vagrant](http://vagrantup.com)
+- The Vagrant Boxes of [modern.io](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) (Select Vagrant as platform)
 
 ## Installation
 
 ```bash
-git clone https://github.com/mpalpha/vagrant-modern-ie.git
+git clone https://github.com/pascaliske/vagrant-modern-ie.git
 ```
 
 ## Usage
@@ -22,7 +25,7 @@ vagrant status
 To start a new virtual machine.
 
 ```bash
-vagrant up IE10-Win7
+vagrant up ie10-win7
 ```
   
 To remove all virtual machines (**will reset trial**).
@@ -34,13 +37,13 @@ vagrant destroy
 To remove a specific virtual machine (**will reset trial**).
 
 ```bash
-vagrant destroy IE10-Win7
+vagrant destroy ie10-win7
 ```
 
 To start multiple virtual machines at once.
 
 ```bash
-vagrant up edge-Win10 IE11-Win7 IE10-Win7 IE9-Win7 IE8-Win7
+vagrant up msedge-win10 ie11-win7 ie10-win7 ie9-win7 ie8-win7
 ```
 
 
@@ -55,14 +58,14 @@ netsh interface portproxy add v4tov4 8000 10.0.0.3
 
 ModernIE VMs
 
-* edge-Win10
-* IE11-Win7
-* IE11-Win8.1
-* IE10-Win7
-* IE10-Win8
-* IE9-Win7
-* IE8-Win7
-* IE7-Vista  
+* msedge-win10
+* ie11-win7
+* ie11-win8.1
+* ie10-win7
+* ie10-win8
+* ie9-win7
+* ie8-win7
+* ie7-vista  
 
 System Account Credentials
 
